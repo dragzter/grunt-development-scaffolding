@@ -58,9 +58,9 @@
       // Default tasks
       //grunt.loadNpmTasks('grunt-contrib-jshint');
       grunt.loadNpmTasks('grunt-contrib-uglify');
-      grunt.loadNpmTasks('grunt-concurrent');
+      //grunt.loadNpmTasks('grunt-concurrent');
       //grunt.loadNpmTasks('grunt-contrib-less');
-      grunt.loadNpmTasks('grunt-parallel');
+      //grunt.loadNpmTasks('grunt-parallel');
       grunt.loadNpmTasks('grunt-express');
       grunt.loadNpmTasks('grunt-contrib-sass');
       grunt.loadNpmTasks('grunt-contrib-cssmin');
