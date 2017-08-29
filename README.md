@@ -8,7 +8,7 @@ To start the watch task, type "grunt" into your terminal.  Livereload tracks any
 
 Tasks:
 
-'''
+```
 sass: { // Task 
           dist: { // Target        
             files: { // Dictionary of files 
@@ -17,4 +17,4 @@ sass: { // Task
             }
           }
         },
-'''
+```
