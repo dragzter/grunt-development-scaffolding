@@ -13,7 +13,7 @@ Tasks:
 sass: { // Task 
           dist: { // Target        
             files: { // Dictionary of files 
-              'app/assets/css/style.css': 'app/assets/scss/style.scss'
+              'app/assets/css/style.css': 'app/assets/scss/style.scss'  //unless you plan to use @import in your sass files, add every sass file to this listing
               // 'destination': 'source' 
             }
           }
@@ -29,7 +29,7 @@ cssmin: {
           },
           build: {
             files: {
-              'app/assets/min/style.min.css': 'app/assets/css/*.css'
+              'app/assets/min/style.min.css': 'app/assets/css/*.css'  // the '*' is used to denote "any" or "all" files of that extension
             }
           }
         },
@@ -43,8 +43,8 @@ uglify: {
             banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
           },
           build: {
-            src: 'app/assets/js/*.js',
-            dest: 'app/assets/min/js.min.js'
+            src: 'app/assets/js/*.js',  //source
+            dest: 'app/assets/min/js.min.js'  //destination
           }
         },
 ```
@@ -71,9 +71,9 @@ express: {
             options: {
               port: 3000,
               hostname: 'localhost',
-              bases: ['./app'],
+              bases: ['./app'],  //this is the folder directory that contains your app, or index.html
               livereload: true,
-              open: 'http://localhost:3000'
+              open: 'http://localhost:3000'  //open the browser window to localhost:3000
             }
           }
         }
